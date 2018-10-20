@@ -8,7 +8,7 @@ normalize=function(x){
 #Now we apply normailze function to all input data.
 concrete_norm=as.data.frame(lapply(concrete,normalize))
 #To confirm our data is normalized use summary() function.
-summary(concrete_norm)#we see in the data the range is 0 to 1.
+summary(concrete_norm)#we can see in the data the range between 0 to 1.
 concrete_train=concrete_norm[1:773,]
 concrete_test=concrete_norm[774:1030,]
 #install.packages("neuralnet")
